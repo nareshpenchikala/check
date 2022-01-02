@@ -38,7 +38,7 @@ jobs:
           git init
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "narespenchikala"
-          git remote add naresh https://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@github.com/nareshpenchikala/check.git
+          git remote add naresh https://nareshpenchikala:LAKSHMISUHASINI@github.com/nareshpenchikala/check.git
           git pull naresh main
           cd ../
           rsync -a --exclude 'dummy' * dummy/
@@ -46,5 +46,5 @@ jobs:
           git add .
           git commit -m "new files added"
           git checkout -b main
-          git push https://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@github.com/nareshpenchikala/check.git HEAD:main
+          git push https://nareshpenchikala:LAKSHMISUHASINI*@github.com/nareshpenchikala/check.git HEAD:main
           rm -rf dummy
