@@ -45,5 +45,6 @@ jobs:
           cd dummy
           git add .
           git commit -m "new files added"
+          git checkout -b main
           git push naresh main
           rm -rf dummy
