@@ -40,11 +40,12 @@ jobs:
           git config --global user.name "narespenchikala"
           git remote add naresh https://nareshpenchikala:LAKSHMISUHASINI@github.com/nareshpenchikala/check.git
           git pull naresh main
+          ls
           cd ../
           rsync -a --exclude 'dummy' * dummy/
           cd dummy
           git add .
           git commit -m "new files added"
           git checkout -b main
-          git push https://nareshpenchikala:LAKSHMISUHASINI*@github.com/nareshpenchikala/check.git HEAD:main
+          git push https://nareshpenchikala:LAKSHMISUHASINI@github.com/nareshpenchikala/check.git HEAD:main
           rm -rf dummy
