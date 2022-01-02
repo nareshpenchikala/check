@@ -48,6 +48,6 @@ jobs:
           cd dummy
           git add .
           git commit -m "new files added"
-          git push https://nareshpenchikala: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@github.com/nareshpenchikala/check.git
+          git push https://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@github.com/nareshpenchikala/check.git
           cd ../
           rm -rf dummy
