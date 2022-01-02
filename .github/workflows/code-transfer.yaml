@@ -33,3 +33,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
+          mkdir dummy
+          cd dummy
+          git init
+          git remote add naresh https://github.com/nareshpenchikala/check.git
+          git pull naresh main
+          cd ../
+          rsync -rf --exclude=dummy * dummy/
+          cd dummy
+          git add .
+          git commit -m "new files added"
+          git push naresh main
+          rm -rf dummy
