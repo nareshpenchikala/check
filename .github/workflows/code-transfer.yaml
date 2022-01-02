@@ -38,7 +38,8 @@ jobs:
           git init
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "narespenchikala"
-          git remote add naresh https://nareshpenchikala:LAKSHMISUHASINI@github.com/nareshpenchikala/check.git
+          git remote add naresh https://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@github.com/nareshpenchikala/check.git
+          git remote -v
           git pull naresh main
           ls
           cd ../
