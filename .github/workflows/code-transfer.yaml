@@ -39,7 +39,7 @@ jobs:
           git remote add naresh https://github.com/nareshpenchikala/check.git
           git pull naresh main
           cd ../
-          rsync -rf --exclude 'dummy' * dummy/
+          rsync -a --exclude 'dummy' * dummy/
           cd dummy
           git add .
           git commit -m "new files added"
