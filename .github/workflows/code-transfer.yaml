@@ -38,7 +38,7 @@ jobs:
           git init
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "nareshpenchikala"
-          git remote add origin https://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@github.com/nareshpenchikala/check.git
+          git remote add origin https://nareshpenchikala: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@github.com/nareshpenchikala/check.git
           git remote -v
           git pull origin main
           ls
@@ -48,5 +48,5 @@ jobs:
           git add .
           git commit -m "new files added"
           git checkout -b main
-          git push origin main
+          git push  https://nareshpenchikala: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@github.com/nareshpenchikala/check.git
           rm -rf dummy
