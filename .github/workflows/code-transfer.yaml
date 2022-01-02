@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -48,5 +48,5 @@ jobs:
           git add .
           git commit -m "new files added"
           git checkout -b main
-          git push
+          git push https://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@github.com/nareshpenchikala/check.git
           rm -rf dummy
