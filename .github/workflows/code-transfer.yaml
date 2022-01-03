@@ -37,6 +37,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
+          git --version
           mkdir dummy
           cd dummy
           git init
