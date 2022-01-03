@@ -49,6 +49,7 @@ jobs:
           git remote -v
           git pull origin main
           git checkout -b main
+          git --version
           ls
           cd ../
           rsync -a --exclude 'dummy' * dummy/
