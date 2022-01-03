@@ -43,7 +43,7 @@ jobs:
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "nareshpenchikala"
           git config --global user.password "LAKSHMISUHASINI"
-          git config --global github.token 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
+          git config --global github.token "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"
           git config credential.helper store
           git remote add origin https://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@github.com/nareshpenchikala/check.git
           git remote -v
@@ -55,6 +55,6 @@ jobs:
           cd dummy
           git add .
           git commit -m "new files added"
-          git push https://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@github.com/nareshpenchikala/check.git HEAD:main
+          git push origin main
           cd ../
           rm -rf dummy
