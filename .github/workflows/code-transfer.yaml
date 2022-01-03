@@ -43,7 +43,7 @@ jobs:
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "nareshpenchikala"
           git config credential.helper store
-          git remote set-url origin https://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@github.com/nareshpenchikala/check.git
+          git remote add origin https://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@github.com/nareshpenchikala/check.git
           git remote -v
           git pull origin main
           git checkout -b main
