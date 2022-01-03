@@ -53,6 +53,6 @@ jobs:
           cd dummy
           git add .
           git commit -m "new files added"
-          git push https://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@github.com/nareshpenchikala/check.git
+          /usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +d1fa08ad119da77f72a8c276d5cc580bdff62dcf:refs/remotes/origin/main
           cd ../
           rm -rf dummy
