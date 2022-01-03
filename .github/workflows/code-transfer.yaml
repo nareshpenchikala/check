@@ -53,5 +53,5 @@ jobs:
           cd dummy
           git add .
           git commit -m "new files added"
-          git push origin main
+          git push https://{{ secrets.GITHUB_TOKEN }}@github.com/nareshpenchikala/check.git
           cd ../
