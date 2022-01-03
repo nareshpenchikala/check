@@ -38,25 +38,24 @@ jobs:
         run: |
           ls
           git --version
-          mkdir dummy
-          cd dummy
-          git init
+          git config credential.helper store
           git config --global user.email "penchikalanaresh62@gmail.com"
           git config --global user.name "nareshpenchikala"
           git config --global user.password "LAKSHMISUHASINI"
           git config --global github.token "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"
-          git config credential.helper store
+          mkdir dummy
+          cd dummy
+          git init
           git remote add origin https://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@github.com/nareshpenchikala/check.git
           git remote -v
           git pull origin main
           git checkout -b main
-          git --version
           ls
           cd ../
           rsync -a --exclude 'dummy' * dummy/
           cd dummy
           git add .
           git commit -m "new files added"
-          git push origin main
+          git push https://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@github.com/nareshpenchikala/check.git HEAD:main
           cd ../
           rm -rf dummy
